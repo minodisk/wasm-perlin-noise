@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perline Noise in Rust via wasm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <div style="position: relative"><label for="width">width</label><input id="width" type="range" min="0" max="1000" value="50"></div>
+      <div style="position: relative"><label for="height">height</label><input id="height" type="range" min="0" max="1000" value="50"></div>
+      <div style="position: relative"><label for="time">time</label><input id="time" type="range" min="0" max="3600" value="0"></div>
+      <div style="position: relative"><label for="octaves">octaves</label><input id="octaves" type="range" min="1" max="10" value="1"></div>
+      <div style="position: relative"><label for="persistence">persistence</label><input id="persistence" type="range" min="0" max="1000" value="1000"></div>
+      <div style="position: relative"><label for="repeatX">Repeat X</label><input id="repeatX" type="range" min="0" max="1000" value="0"></div>
+      <div style="position: relative"><label for="repeatY">Repeat Y</label><input id="repeatY" type="range" min="0" max="1000" value="0"></div>
+      <div style="position: relative"><label for="repeatZ">Repeat Z</label><input id="repeatZ" type="range" min="0" max="1000" value="0"></div>
+    </div>
+    <div>
+      <canvas></canvas>
+    </div>
+    <script src="perlin.js"></script>
+  </body>
+</html>
